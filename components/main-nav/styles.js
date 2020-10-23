@@ -67,17 +67,35 @@ export const useStyles = makeStyles((theme => ({
       display: 'block'
     }
   },
+  userButton: {
+    marginLeft: theme.spacing(1)
+  },
+  userIcon: {
+    color: theme.palette.common.white,
+    width: '2rem',
+    height: 'auto'
+  },
+  searchIcon: {
+    position: 'absolute',
+    left: 10
+  },
   search: {
+    display: 'flex',
+    alignItems: 'center',
     position: 'relative',
     backgroundColor: fade(theme.palette.common.white, .15),
     borderRadius: theme.shape.borderRadius,
-    paddingLeft: '60px',
+    paddingLeft: '40px',
     marginLeft: 'auto'
   },
   inputRoot: {
     color: 'inherit'
   },
   inputInput: {
-
+    width: 60,
+    transition: 'width .2s',
+    '&:focus': {
+      width: '200px',
+    }
   }
 })));
