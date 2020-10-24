@@ -3,7 +3,7 @@ import teal from '@material-ui/core/colors/teal';
 
 export const useStyles = makeStyles((theme => ({
   root: {
-    position: 'static',
+    // position: 'static',
     backgroundColor: teal[400],
     color: theme.palette.common.white,
     width: '100%',
@@ -68,7 +68,10 @@ export const useStyles = makeStyles((theme => ({
     }
   },
   userButton: {
-    marginLeft: theme.spacing(1)
+    marginLeft: theme.spacing(1),
+    [theme.breakpoints.down('601')]: {
+      display: 'none'
+    }
   },
   userIcon: {
     color: theme.palette.common.white,
@@ -93,9 +96,16 @@ export const useStyles = makeStyles((theme => ({
   },
   inputInput: {
     width: 60,
+    [theme.breakpoints.down('601')]: {
+      width: '100%'
+    },
     transition: 'width .2s',
     '&:focus': {
       width: '200px',
+      [theme.breakpoints.down('601')]: {
+        width: '100%'
+      }
     }
-  }
+  },
+  offset: theme.mixins.toolbar
 })));

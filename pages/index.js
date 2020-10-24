@@ -1,6 +1,6 @@
-import { Container } from '@material-ui/core';
 import MainNav from '../components/main-nav';
 import { MainHead } from '../components/Head/mainHead';
+import {Header} from '../components/header';
 import styles from '../styles/Home.module.css';
 
 
@@ -8,11 +8,67 @@ export default function Home() {
 
   return (
     <>
-      <MainHead/>
-      <MainNav/>
+      <Header/>
       <div className={styles.container}>
         <main className={styles.main}>
-          index page
+          First letter dolor sit amet, consectetur adipisicing elit. Delectus ducimus harum illo quisquam voluptates. Autem debitis, delectus excepturi exercitationem expedita molestias mollitia, nam odio porro quae, quaerat ratione sed tempore.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus ducimus harum illo quisquam voluptates. Autem debitis, delectus excepturi exercitationem expedita molestias mollitia, nam odio porro quae, quaerat ratione sed tempore.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus ducimus harum illo quisquam voluptates. Autem debitis, delectus excepturi exercitationem expedita molestias mollitia, nam odio porro quae, quaerat ratione sed tempore.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus ducimus harum illo quisquam voluptates. Autem debitis, delectus excepturi exercitationem expedita molestias mollitia, nam odio porro quae, quaerat ratione sed tempore.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus ducimus harum illo quisquam voluptates. Autem debitis, delectus excepturi exercitationem expedita molestias mollitia, nam odio porro quae, quaerat ratione sed tempore.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus ducimus harum illo quisquam voluptates. Autem debitis, delectus excepturi exercitationem expedita molestias mollitia, nam odio porro quae, quaerat ratione sed tempore.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus ducimus harum illo quisquam voluptates. Autem debitis, delectus excepturi exercitationem expedita molestias mollitia, nam odio porro quae, quaerat ratione sed tempore.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus ducimus harum illo quisquam voluptates. Autem debitis, delectus excepturi exercitationem expedita molestias mollitia, nam odio porro quae, quaerat ratione sed tempore.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus ducimus harum illo quisquam voluptates. Autem debitis, delectus excepturi exercitationem expedita molestias mollitia, nam odio porro quae, quaerat ratione sed tempore.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus ducimus harum illo quisquam voluptates. Autem debitis, delectus excepturi exercitationem expedita molestias mollitia, nam odio porro quae, quaerat ratione sed tempore.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus ducimus harum illo quisquam voluptates. Autem debitis, delectus excepturi exercitationem expedita molestias mollitia, nam odio porro quae, quaerat ratione sed tempore.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus ducimus harum illo quisquam voluptates. Autem debitis, delectus excepturi exercitationem expedita molestias mollitia, nam odio porro quae, quaerat ratione sed tempore.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus ducimus harum illo quisquam voluptates. Autem debitis, delectus excepturi exercitationem expedita molestias mollitia, nam odio porro quae, quaerat ratione sed tempore.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus ducimus harum illo quisquam voluptates. Autem debitis, delectus excepturi exercitationem expedita molestias mollitia, nam odio porro quae, quaerat ratione sed tempore.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus ducimus harum illo quisquam voluptates. Autem debitis, delectus excepturi exercitationem expedita molestias mollitia, nam odio porro quae, quaerat ratione sed tempore.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus ducimus harum illo quisquam voluptates. Autem debitis, delectus excepturi exercitationem expedita molestias mollitia, nam odio porro quae, quaerat ratione sed tempore.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus ducimus harum illo quisquam voluptates. Autem debitis, delectus excepturi exercitationem expedita molestias mollitia, nam odio porro quae, quaerat ratione sed tempore.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus ducimus harum illo quisquam voluptates. Autem debitis, delectus excepturi exercitationem expedita molestias mollitia, nam odio porro quae, quaerat ratione sed tempore.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus ducimus harum illo quisquam voluptates. Autem debitis, delectus excepturi exercitationem expedita molestias mollitia, nam odio porro quae, quaerat ratione sed tempore.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus ducimus harum illo quisquam voluptates. Autem debitis, delectus excepturi exercitationem expedita molestias mollitia, nam odio porro quae, quaerat ratione sed tempore.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus ducimus harum illo quisquam voluptates. Autem debitis, delectus excepturi exercitationem expedita molestias mollitia, nam odio porro quae, quaerat ratione sed tempore.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus ducimus harum illo quisquam voluptates. Autem debitis, delectus excepturi exercitationem expedita molestias mollitia, nam odio porro quae, quaerat ratione sed tempore.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus ducimus harum illo quisquam voluptates. Autem debitis, delectus excepturi exercitationem expedita molestias mollitia, nam odio porro quae, quaerat ratione sed tempore.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus ducimus harum illo quisquam voluptates. Autem debitis, delectus excepturi exercitationem expedita molestias mollitia, nam odio porro quae, quaerat ratione sed tempore.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus ducimus harum illo quisquam voluptates. Autem debitis, delectus excepturi exercitationem expedita molestias mollitia, nam odio porro quae, quaerat ratione sed tempore.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus ducimus harum illo quisquam voluptates. Autem debitis, delectus excepturi exercitationem expedita molestias mollitia, nam odio porro quae, quaerat ratione sed tempore.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus ducimus harum illo quisquam voluptates. Autem debitis, delectus excepturi exercitationem expedita molestias mollitia, nam odio porro quae, quaerat ratione sed tempore.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus ducimus harum illo quisquam voluptates. Autem debitis, delectus excepturi exercitationem expedita molestias mollitia, nam odio porro quae, quaerat ratione sed tempore.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus ducimus harum illo quisquam voluptates. Autem debitis, delectus excepturi exercitationem expedita molestias mollitia, nam odio porro quae, quaerat ratione sed tempore.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus ducimus harum illo quisquam voluptates. Autem debitis, delectus excepturi exercitationem expedita molestias mollitia, nam odio porro quae, quaerat ratione sed tempore.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus ducimus harum illo quisquam voluptates. Autem debitis, delectus excepturi exercitationem expedita molestias mollitia, nam odio porro quae, quaerat ratione sed tempore.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus ducimus harum illo quisquam voluptates. Autem debitis, delectus excepturi exercitationem expedita molestias mollitia, nam odio porro quae, quaerat ratione sed tempore.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus ducimus harum illo quisquam voluptates. Autem debitis, delectus excepturi exercitationem expedita molestias mollitia, nam odio porro quae, quaerat ratione sed tempore.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus ducimus harum illo quisquam voluptates. Autem debitis, delectus excepturi exercitationem expedita molestias mollitia, nam odio porro quae, quaerat ratione sed tempore.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus ducimus harum illo quisquam voluptates. Autem debitis, delectus excepturi exercitationem expedita molestias mollitia, nam odio porro quae, quaerat ratione sed tempore.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus ducimus harum illo quisquam voluptates. Autem debitis, delectus excepturi exercitationem expedita molestias mollitia, nam odio porro quae, quaerat ratione sed tempore.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus ducimus harum illo quisquam voluptates. Autem debitis, delectus excepturi exercitationem expedita molestias mollitia, nam odio porro quae, quaerat ratione sed tempore.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus ducimus harum illo quisquam voluptates. Autem debitis, delectus excepturi exercitationem expedita molestias mollitia, nam odio porro quae, quaerat ratione sed tempore.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus ducimus harum illo quisquam voluptates. Autem debitis, delectus excepturi exercitationem expedita molestias mollitia, nam odio porro quae, quaerat ratione sed tempore.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus ducimus harum illo quisquam voluptates. Autem debitis, delectus excepturi exercitationem expedita molestias mollitia, nam odio porro quae, quaerat ratione sed tempore.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus ducimus harum illo quisquam voluptates. Autem debitis, delectus excepturi exercitationem expedita molestias mollitia, nam odio porro quae, quaerat ratione sed tempore.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus ducimus harum illo quisquam voluptates. Autem debitis, delectus excepturi exercitationem expedita molestias mollitia, nam odio porro quae, quaerat ratione sed tempore.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus ducimus harum illo quisquam voluptates. Autem debitis, delectus excepturi exercitationem expedita molestias mollitia, nam odio porro quae, quaerat ratione sed tempore.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus ducimus harum illo quisquam voluptates. Autem debitis, delectus excepturi exercitationem expedita molestias mollitia, nam odio porro quae, quaerat ratione sed tempore.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus ducimus harum illo quisquam voluptates. Autem debitis, delectus excepturi exercitationem expedita molestias mollitia, nam odio porro quae, quaerat ratione sed tempore.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus ducimus harum illo quisquam voluptates. Autem debitis, delectus excepturi exercitationem expedita molestias mollitia, nam odio porro quae, quaerat ratione sed tempore.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus ducimus harum illo quisquam voluptates. Autem debitis, delectus excepturi exercitationem expedita molestias mollitia, nam odio porro quae, quaerat ratione sed tempore.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus ducimus harum illo quisquam voluptates. Autem debitis, delectus excepturi exercitationem expedita molestias mollitia, nam odio porro quae, quaerat ratione sed tempore.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus ducimus harum illo quisquam voluptates. Autem debitis, delectus excepturi exercitationem expedita molestias mollitia, nam odio porro quae, quaerat ratione sed tempore.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus ducimus harum illo quisquam voluptates. Autem debitis, delectus excepturi exercitationem expedita molestias mollitia, nam odio porro quae, quaerat ratione sed tempore.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus ducimus harum illo quisquam voluptates. Autem debitis, delectus excepturi exercitationem expedita molestias mollitia, nam odio porro quae, quaerat ratione sed tempore.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus ducimus harum illo quisquam voluptates. Autem debitis, delectus excepturi exercitationem expedita molestias mollitia, nam odio porro quae, quaerat ratione sed tempore.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus ducimus harum illo quisquam voluptates. Autem debitis, delectus excepturi exercitationem expedita molestias mollitia, nam odio porro quae, quaerat ratione sed tempore.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus ducimus harum illo quisquam voluptates. Autem debitis, delectus excepturi exercitationem expedita molestias mollitia, nam odio porro quae, quaerat ratione sed tempore.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus ducimus harum illo quisquam voluptates. Autem debitis, delectus excepturi exercitationem expedita molestias mollitia, nam odio porro quae, quaerat ratione sed tempore.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus ducimus harum illo quisquam voluptates. Autem debitis, delectus excepturi exercitationem expedita molestias mollitia, nam odio porro quae, quaerat ratione sed tempore.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus ducimus harum illo quisquam voluptates. Autem debitis, delectus excepturi exercitationem expedita molestias mollitia, nam odio porro quae, quaerat ratione sed tempore.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus ducimus harum illo quisquam voluptates. Autem debitis, delectus excepturi exercitationem expedita molestias mollitia, nam odio porro quae, quaerat ratione sed tempore.
         </main>
 
         <footer className={styles.footer}>

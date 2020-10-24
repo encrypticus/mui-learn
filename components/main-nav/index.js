@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef } from 'react';
+import React from 'react';
 import {
   AppBar,
   Toolbar,
@@ -6,128 +6,154 @@ import {
   Button,
   Typography,
   InputBase,
-  Menu,
-  MenuItem,
-  Grow,
-  Fade
+  Slide,
+  useScrollTrigger
 } from '@material-ui/core';
 import { Menu as MenuIcon } from '@material-ui/icons';
 import MoreVertIcon from '@material-ui/icons/MoreVert';
 import AccountBoxIcon from '@material-ui/icons/AccountBox';
 import SearchIcon from '@material-ui/icons/Search';
 import Link from 'next/Link';
+import {MobileMenu} from '../contex-menus/mobile';
+import {ProfileMenu} from '../contex-menus/profile';
 import { useStyles } from './styles';
 
-const MainNav = () => {
-  const classes = useStyles();
-  const ref = useRef(null);
-  const [openMenu, setOpenMenu] = useState(false);
-
-  useEffect(() => {
-    console.log(ref.current);
-  });
-
-  const openMenuHandler = (event) => {
-    setOpenMenu(true);
-  };
-
-  const closeMenuHandler = () => {
-    setOpenMenu(false);
-  };
+const HideOnScroll = ({ children }) => {
+  const trigger = useScrollTrigger();
 
   return (
-    <AppBar className={classes.root}>
-      <Toolbar>
-        <IconButton className={classes.burgerButton}>
-          <MenuIcon className={classes.burgerIcon}/>
-        </IconButton>
+    <Slide appear={false} direction={'down'} in={!trigger}>
+      {children}
+    </Slide>
+  );
+};
 
-        <Typography className={classes.title} variant="h6" noWrap>
-          Material-UI
-        </Typography>
+const MainNav = (props) => {
+  const classes = useStyles();
+  const [anchorEl, setAnchorEl] = React.useState(null);
+  const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = React.useState(null);
 
-        <ul className={classes.navList}>
+  const isMenuOpen = Boolean(anchorEl);
+  const isMobileMenuOpen = Boolean(mobileMoreAnchorEl);
 
-          <li className={classes.navItem}>
-            <Link href={'/'} component={'button'}>
-              <Button className={classes.navLink} href={'/'}>
-                home
-              </Button>
-            </Link>
-          </li>
+  const handleProfileMenuOpen = (event) => {
+    setAnchorEl(event.currentTarget);
+  };
 
-          <li className={classes.navItem}>
-            <Link href={'/about'} component={'button'}>
-              <Button className={classes.navLink} href={'/about'}>
-                about
-              </Button>
-            </Link>
-          </li>
+  const handleMobileMenuClose = () => {
+    setMobileMoreAnchorEl(null);
+  };
 
-          <li className={classes.navItem}>
-            <Link href={'/about'} component={'button'}>
-              <Button className={classes.navLink} href={'/about'}>
-                faq
-              </Button>
-            </Link>
-          </li>
+  const handleMenuClose = (event) => {
+    setAnchorEl(null);
+    handleMobileMenuClose();
+    const { currentTarget: { dataset: { name } } } = event;
+    name && name === 'signIn' ? console.log('Вы вошли') : console.log('Вы зарегались');
+  };
 
-          <li className={classes.navItem}>
-            <Link href={'/about'} component={'button'}>
-              <Button className={classes.navLink} href={'/about'}>
-                contacts
-              </Button>
-            </Link>
-          </li>
+  const handleMobileMenuOpen = (event) => {
+    setMobileMoreAnchorEl(event.currentTarget);
+  };
 
-        </ul>
+  const renderProfileMenu = () => (
+    <ProfileMenu
+      anchorEl={anchorEl}
+      open={isMenuOpen}
+      onClose={handleMenuClose}
+    />
+  );
 
-        <div className={classes.search}>
-          <SearchIcon className={classes.searchIcon}/>
-          <InputBase
-            classes={{
-              root: classes.inputRoot,
-              input: classes.inputInput
-            }}
-            placeholder='Поиск'
-          />
-        </div>
+  const renderMobileMenu = () => (
+    <MobileMenu
+      anchorEl={mobileMoreAnchorEl}
+      open={isMobileMenuOpen}
+      profileMenuOpen={handleProfileMenuOpen}
+      onClose={handleMenuClose}
+    />
+  );
 
-        <IconButton
-          className={classes.userButton}
-          ref={ref}
-          onClick={openMenuHandler}
-        >
-          <AccountBoxIcon className={classes.userIcon}/>
-        </IconButton>
+  return (
+    <>
+      <HideOnScroll {...props}>
+        <AppBar className={classes.root}>
+          <Toolbar>
+            <IconButton className={classes.burgerButton}>
+              <MenuIcon className={classes.burgerIcon}/>
+            </IconButton>
 
-        <IconButton className={classes.menuButton}>
-          <MoreVertIcon className={classes.menuIcon}/>
-        </IconButton>
+            <Typography className={classes.title} variant="h6" noWrap>
+              Material-UI
+            </Typography>
 
-        <Menu
-          open={openMenu}
-          anchorEl={ref.current}
-          keepMounted
-          onClose={closeMenuHandler}
-          anchorOrigin={{ vertical: 'bottom', horizontal: 'left' }}
-          transformOrigin={{
-            vertical: 'top',
-            horizontal: 'center',
-          }}
-          getContentAnchorEl={null}
-          TransitionComponent={Fade}
-        >
-          <MenuItem onClick={closeMenuHandler}>
-            Регистрация
-          </MenuItem>
-          <MenuItem onClick={closeMenuHandler}>
-            Вход
-          </MenuItem>
-        </Menu>
+            <ul className={classes.navList}>
 
-      </Toolbar>
-    </AppBar>
+              <li className={classes.navItem}>
+                <Link href={'/'} component={'button'}>
+                  <Button className={classes.navLink} href={'/'}>
+                    home
+                  </Button>
+                </Link>
+              </li>
+
+              <li className={classes.navItem}>
+                <Link href={'/about'} component={'button'}>
+                  <Button className={classes.navLink} href={'/about'}>
+                    about
+                  </Button>
+                </Link>
+              </li>
+
+              <li className={classes.navItem}>
+                <Link href={'/about'} component={'button'}>
+                  <Button className={classes.navLink} href={'/about'}>
+                    faq
+                  </Button>
+                </Link>
+              </li>
+
+              <li className={classes.navItem}>
+                <Link href={'/about'} component={'button'}>
+                  <Button className={classes.navLink} href={'/about'}>
+                    contacts
+                  </Button>
+                </Link>
+              </li>
+
+            </ul>
+
+            <div className={classes.search}>
+              <SearchIcon className={classes.searchIcon}/>
+              <InputBase
+                classes={{
+                  root: classes.inputRoot,
+                  input: classes.inputInput
+                }}
+                placeholder='Поиск'
+              />
+            </div>
+
+            <IconButton
+              className={classes.userButton}
+              onClick={handleProfileMenuOpen}
+            >
+              <AccountBoxIcon className={classes.userIcon}/>
+            </IconButton>
+
+            <IconButton
+              className={classes.menuButton}
+              onClick={handleMobileMenuOpen}
+            >
+              <MoreVertIcon/>
+            </IconButton>
+
+            {renderMobileMenu()}
+            {renderProfileMenu()}
+
+          </Toolbar>
+        </AppBar>
+      </HideOnScroll>
+      <div className={classes.offset}/>
+    </>
   );
 };
 
